@@ -10,14 +10,12 @@ variable "region" {
 
 variable "prefix" {
   type        = string
-  description = "(Optional) Prefix to use for all resources in this module. Default: globo-dev"
-  default     = "globo-dev"
+  description = "(Required) Prefix to use for all resources in this module. Default: globo-dev"
 }
 
 variable "environment" {
   type        = string
-  description = "(Optional) Environment of all RESOURCES"
-  default     = "development"
+  description = "(Required) Environment of all RESOURCES"
 }
 
 variable "billing_code" {
@@ -27,8 +25,7 @@ variable "billing_code" {
 
 variable "cidr_block" {
   type        = string
-  description = "(Optional) The CIDR block for the VPC. Default:10.42.0.0/16"
-  default     = "10.42.0.0/16"
+  description = "(Required) The CIDR block for the VPC. Default:10.42.0.0/16"
 }
 
 variable "public_subnets" {
